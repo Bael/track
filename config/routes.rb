@@ -1,4 +1,6 @@
 Track::Application.routes.draw do
+  devise_for :users
+
   resources :goals
 
 
@@ -10,6 +12,7 @@ Track::Application.routes.draw do
 
   resources :records
 
+  root :to => 'acts#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
