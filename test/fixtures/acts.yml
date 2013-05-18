@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  description: MyString
+  duedate: 2013-05-12 21:47:41
+  status: MyString
+  priority: 1
+  severity: 1
+
+two:
+  title: MyString
+  description: MyString
+  duedate: 2013-05-12 21:47:41
+  status: MyString
+  priority: 1
+  severity: 1

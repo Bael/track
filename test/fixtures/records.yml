@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  start_at: 2013-05-12 21:42:10
+  stop_at: 2013-05-12 21:42:10
+  act: 
+
+two:
+  start_at: 2013-05-12 21:42:10
+  stop_at: 2013-05-12 21:42:10
+  act: 

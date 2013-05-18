@@ -1,0 +1,45 @@
+<%= form_for @act, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :title, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :title, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :description, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :description, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :duedate, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.datetime_select :duedate, :class => 'datetime_select' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :status, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :status, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :priority, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.number_field :priority, :class => 'number_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :severity, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.number_field :severity, :class => 'number_field' %>
+    </div>
+  </div>
+
+  <!-- here will be play button -->
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                acts_path, :class => 'btn' %>
+  </div>
+<% end %>
